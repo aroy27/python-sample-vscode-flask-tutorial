@@ -15,7 +15,7 @@ steps:
   displayName: 'Show Java'
 
 - script: |
-    wget -o /tmp/dita-ot.zip https://github.com/dita-ot/dita-ot/releases/download/4.1/dita-ot-4.1.zip
+    wget -O /tmp/dita-ot.zip https://github.com/dita-ot/dita-ot/releases/download/4.1/dita-ot-4.1.zip
     unzip /tmp/dita-ot.zip
     cd /tmp/dita-ot/bin
     dita --version
