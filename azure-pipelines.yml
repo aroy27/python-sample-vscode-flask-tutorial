@@ -28,3 +28,8 @@ steps:
     /tmp/dita-ot-3.7.4/bin/dita --input=${gitdir}/readme-skimmed3/DODreadme_PDF.ditamap --format=pdf --output=${gitdir}/readme-skimmed3/output
     ls -l ${gitdir}/readme-skimmed3/output
   displayName: 'Install DITA-OT and generate pdf'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: readme-skimmed3/output/DODreadme_PDF.pdf
+    artifactName: DODreadme_PDF.pdf
