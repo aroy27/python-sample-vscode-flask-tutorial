@@ -19,6 +19,5 @@ steps:
     cd /tmp
     unzip dita-ot.zip
     cd /tmp/dita-ot-4.1/bin
-    ls -l
-    #dita --version
+    ./dita --version
   displayName: 'Download DITA-OT'
