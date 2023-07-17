@@ -11,5 +11,5 @@ steps:
   displayName: 'Show Python version'
 
 - script: |
-    java -version
-  displayName: 'Show Java version'
+    echo ${JAVA_HOME_17_X64}
+  displayName: 'Show Java'
