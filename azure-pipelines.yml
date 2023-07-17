@@ -11,5 +11,5 @@ steps:
   displayName: 'Show Python version'
 
 - script: |
-    cat /etc/os-release
-  displayName: 'Show OS details'
+    java -version
+  displayName: 'Show Java version'
