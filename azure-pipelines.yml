@@ -21,9 +21,11 @@ steps:
   displayName: 'Show Java'
 
 - script: |
-    wget -O /tmp/dita-ot.zip https://github.com/dita-ot/dita-ot/releases/download/3.7.4/dita-ot-3.7.4.zip
+    wget -q -O /tmp/dita-ot.zip https://github.com/dita-ot/dita-ot/releases/download/3.7.4/dita-ot-3.7.4.zip
     cd /tmp
     unzip dita-ot.zip
-    cd /tmp/dita-ot-3.7.4/bin
-    ./dita --version
-  displayName: 'Download DITA-OT'
+    cd -
+    pwd
+    /tmp/dita-ot-3.7.4/bin/dita --input=DODreadme_PDF.ditamap --format=pdf --output=output
+    ls -l output
+  displayName: 'Install DITA-OT and generate pdf'
