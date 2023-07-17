@@ -26,6 +26,6 @@ steps:
     unzip -q dita-ot.zip
     cd -
     pwd
-    /tmp/dita-ot-3.7.4/bin/dita --input=DODreadme_PDF.ditamap --format=pdf --output=output
+    /tmp/dita-ot-3.7.4/bin/dita --input=./DODreadme_PDF.ditamap --format=pdf --output=./output
     ls -l output
   displayName: 'Install DITA-OT and generate pdf'
