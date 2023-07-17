@@ -11,5 +11,5 @@ steps:
   displayName: 'Show Python version'
 
 - script: |
-    ls -l ${JAVA_HOME_17_X64}
+    ${JAVA_HOME_17_X64}/bin/java -version
   displayName: 'Show Java'
