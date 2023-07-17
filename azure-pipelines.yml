@@ -14,10 +14,10 @@ steps:
     pwd
     echo '---'
     git log --oneline
-  displayName: 'Show Python version'
+  displayName: 'Show git clone directory'
 
 - script: |
-    ${JAVA_HOME_17_X64}/bin/java -version
+    java -version
   displayName: 'Show Java'
 
 - script: |
@@ -25,6 +25,6 @@ steps:
     wget -q -O /tmp/dita-ot.zip https://github.com/dita-ot/dita-ot/releases/download/3.7.4/dita-ot-3.7.4.zip
     cd /tmp
     unzip -q dita-ot.zip
-    /tmp/dita-ot-3.7.4/bin/dita --input=${gitdir}/DODreadme_PDF.ditamap --format=pdf --output=${gitdir}/output
-    ls -l ${gitdir}/output
+    /tmp/dita-ot-3.7.4/bin/dita --input=${gitdir}/readme-skimmed3/DODreadme_PDF.ditamap --format=pdf --output=${gitdir}/readme-skimmed3/output
+    ls -l ${gitdir}/readme-skimmed3/output
   displayName: 'Install DITA-OT and generate pdf'
