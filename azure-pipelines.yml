@@ -11,6 +11,12 @@ steps:
   displayName: 'Show Python version'
 
 - script: |
+    pwd
+    echo '---'
+    git log --oneline
+  displayName: 'Show Python version'
+
+- script: |
     ${JAVA_HOME_17_X64}/bin/java -version
   displayName: 'Show Java'
 
