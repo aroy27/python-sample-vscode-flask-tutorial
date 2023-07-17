@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN"
+ "topic.dtd">
+<?Pub Sty _display FontColor="red"?>
+<topic id="readme" xml:lang="en-us">
+<title>Product Name</title>
+<body>
+  <section>
+   <title>Version </title>
+  </section>
+  <section id="PerformanceImprovement">
+   <title>Performance Improvement</title>
+   <p/>
+  </section>
+  <section id="ManagedDOD">
+   <title>Managed </title>
+  </section>
+ </body>
+</topic>
+
+<?Pub *0000003325?>

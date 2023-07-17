@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<?Pub Sty _display FontColor="red"?>
+<bookmap>
+ <booktitle>
+  <mainbooktitle otherprops="annot">AROY DOD</mainbooktitle>
+  <booktitlealt>Version 16</booktitlealt>
+  </booktitle>
+
+<frontmatter>
+<topicref href="DODspecialnotice.dita"/>
+<topicref href="DODeditionnotice.dita"/>
+</frontmatter>
+<chapter format="dita" href="about.dita" navtitle="About this file"
+scope="local" type="reference"></chapter>
+<chapter format="dita" href="readme.dita" navtitle="Version 16.0"
+scope="local" type="topic"></chapter><?Pub Caret -2?>
+<chapter format="dita" href="Trademarks.dita" navtitle="Trademarks"
+scope="local" type="reference"></chapter>
+<chapter format="dita" href="Collectedlinks.dita"
+navtitle="Collected links" scope="local" type="reference"></chapter>
+</bookmap>
+

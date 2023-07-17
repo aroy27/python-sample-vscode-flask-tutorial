@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "reference.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<reference id="trademarks" xml:lang="en-us">
+<title>Trademarks</title>
+<shortdesc>Trademarks information</shortdesc>
+<refbody>
+<section>
+   <p>Other product and service names might be trademarks of  other companies.</p>
+  </section>
+</refbody>
+</reference>
+<?Pub *0000001274?>

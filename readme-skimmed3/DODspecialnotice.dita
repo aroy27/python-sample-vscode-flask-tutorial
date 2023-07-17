@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="DODspecialnotice" xml:lang="en-us">
+<title>Note</title><?Pub Caret -2?>
+<conbody>
+<p>Before using this information and the product it supports, read
+the information in <xref href="DODnotices.dita"></xref>.</p>
+</conbody>
+</concept>
+<?Pub *0000000585?>

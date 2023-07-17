@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "reference.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<reference id="aboutthisfile" xml:lang="en-us">
+<title>About this file</title>
+<shortdesc>About </shortdesc>
+<refbody>
+<section><title>About </title></section>
+</refbody>
+</reference>
+<?Pub *0000002944?>
