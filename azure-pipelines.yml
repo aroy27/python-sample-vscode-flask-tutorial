@@ -24,11 +24,20 @@ steps:
     wget -q -O /tmp/dita-ot.zip https://github.com/dita-ot/dita-ot/releases/download/3.7.4/dita-ot-3.7.4.zip
     cd /tmp
     unzip -q dita-ot.zip
-    /tmp/dita-ot-3.7.4/bin/dita --input=${gitdir}/readme-skimmed3/DODreadme_PDF.ditamap --format=pdf --output=${gitdir}/readme-skimmed3/output
-    ls -l ${gitdir}/readme-skimmed3/output
-  displayName: 'Install DITA-OT and generate pdf'
+    /tmp/dita-ot-3.7.4/bin/dita --input=${gitdir}/readme-skimmed3/DODreadme_PDF.ditamap --format=pdf --output=${gitdir}/readme-skimmed3/output_pdf
+    /tmp/dita-ot-3.7.4/bin/dita --input=${gitdir}/readme-skimmed3/DODreadme_PDF.ditamap --format=html5 --output=${gitdir}/readme-skimmed3/output_html5
+    ls -l ${gitdir}/readme-skimmed3/output_pdf
+    ls -l ${gitdir}/readme-skimmed3/output_html5
+    cd ${gitdir}/readme-skimmed3/output_html5
+    zip -r readme_html5.zip .
+  displayName: 'Install DITA-OT and generate pdf, html5'
 
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: readme-skimmed3/output/DODreadme_PDF.pdf
+    targetPath: readme-skimmed3/output_pdf/DODreadme_PDF.pdf
     artifactName: DODreadme_PDF.pdf
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: readme-skimmed3/output_html5/readme_html5.zip
+    artifactName: readme_html5.zip
